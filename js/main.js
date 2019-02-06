@@ -55,7 +55,7 @@ Hamburger.prototype.calculatePrice = function () {
             a += this[key].price
         }
     }
-    return a;
+    return "Колличество каллорий: "+a;
 };
 Hamburger.prototype.calculateCalories = function() {
     var a = 0;
@@ -64,7 +64,7 @@ Hamburger.prototype.calculateCalories = function() {
             a += this[key].cal
         }
     }
-    return a;
+    return "Сумма вашего товара равна: "+ a + " тугрик";
 };
 Hamburger.prototype.addTopping = function(topping) {
     try{
@@ -110,9 +110,6 @@ Hamburger.prototype.getToppings = function() {
     };
     return a;
 };
-function HamburgerEx(message){
+function HamburgerEx(message) {
     this._message = message;
-}    
-
-
-
+};
